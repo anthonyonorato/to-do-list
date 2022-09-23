@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f2a80e826c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="icon.png">
+    <script src="main.js" defer></script>
+    <title>_toDoList</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <h1 class="nav__title"><i class="fa-solid fa-check-double"></i>Todo</h1>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="left">
+        <div class="top">
+          <div class="today">
+            <i class="fa-solid fa-calendar-day today__icon"></i>Today
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="projects-list__container">
+            <div class="projects-list__header">
+              <div class="left">
+                <i
+                  class="fa-solid fa-angle-down btn--expand projects__icon"
+                ></i>
+                <i class="fa-solid fa-angle-right btn--show hidden"></i>
+                <h4>Projects</h4>
+              </div>
+              <i class="fa-solid fa-plus btn--add-project projects__icon"></i>
+            </div>
+            <form class="add-project-form hidden">
+              <input
+                type="text"
+                placeholder="Project name"
+                id="project__name"
+                required
+              />
+              <button class="btn btn-add-project">Add</button>
+            </form>
+            <ul class="projects__list"></ul>
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+        <h3 class="project-name">Today</h3>
+        <div class="projects-todos"></div>
+        </div>
+        <button class="btn btn--add-todo">
+          <i class="fa-solid fa-plus btn--add-icon"></i>Add task
+        </button>
+      </section>
+      <div class="modal hidden">
+        <form class="add-todo-form">
+          <ul>
+            <li>
+              <label for="todo-title">Task Title</label>
+              <input
+                type="text"
+                id="todo-title"
+                placeholder="Task title"
+                required
+              />
+            </li>
+            <li>
+              <label for="todo-decription">Task Description</label>
+              <textarea
+                name=""
+                id="todo-description"
+                cols="30"
+                rows="5"
+                placeholder="Task description"
+                required
+              ></textarea>
+            </li>
+            <li class="two-input">
+              <div>
+                <label for="todo-date">Task Date</label>
+                <input type="date" name="" id="todo-date" required />
+              </div>
+              <div>
+                <label for="todo-priority">Task Priority</label>
+                <select name="" id="todo-priority" required>
+                  <option value="">...</option>
+                  <option value="1">High</option>
+                  <option value="2">Medium</option>
+                  <option value="3">Low</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+          <div>
+            <button class="btn form__btn-add" type="submit">Add task</button>
+            <button class="btn form__btn-cancle" type="button">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
