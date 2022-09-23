@@ -1,6 +1,6 @@
 'use strict';
 
 import './style.css';
-import { UI } from './modules/UI';
+import { ui } from './modules/ui';
 
-UI.init();
+ui.init();
