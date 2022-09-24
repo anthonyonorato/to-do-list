@@ -1,20 +1,20 @@
 # todo-list
 
 
-# Languages Used:
+# Languages:
 - HTML
 - CSS
 - Javascript
 
-# Main Functions:
+# Functions:
 - Add New Task
 - Complete/Delete Task
 - Edit Task
 - Show Details of Task
-- Add New Project
+- Add New Project(list)
 - Delete Project
 - All data is saved in localStorage
 
-# Others
-- Wepback as module bundlers
-- Fontawesome for icons -  https://fontawesome.com/
+# Resources
+- Wepback
+- Fontawesome -  https://fontawesome.com/
